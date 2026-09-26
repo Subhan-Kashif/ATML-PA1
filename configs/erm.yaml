@@ -1,0 +1,15 @@
+method: erm
+seed: 6304
+
+data:
+  sources: ["photo", "art_painting", "cartoon"]
+  target: "sketch"
+  val_frac: 0.2
+
+model:
+  num_classes: 7
+
+# ERM is NOT retrained in Task 3 -- it reuses the Task 2 Source-only checkpoint.
+checkpoint:
+  source: task2
+  path: task2/results/source_only/best_checkpoint.pt
