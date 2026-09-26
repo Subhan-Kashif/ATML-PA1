@@ -1,0 +1,23 @@
+seed: 6304
+
+data:
+  sources: ["photo", "art_painting", "cartoon"]
+  target: "sketch"
+  image_size: 256
+  crop_size: 224
+  val_frac: 0.2
+
+training:
+  max_epochs: 30
+  patience: 5
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  per_source_batch_size: 8
+  target_batch_size: 24
+
+model:
+  backbone: resnet18
+  num_classes: 7
+  freeze_batchnorm_running_stats: true
+
+method: null

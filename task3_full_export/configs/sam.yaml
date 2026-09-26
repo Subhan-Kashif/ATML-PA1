@@ -1,0 +1,20 @@
+method: sam
+seed: 6304
+
+data:
+  sources: ["photo", "art_painting", "cartoon"]
+  target: "sketch"
+  val_frac: 0.2
+
+training:
+  max_epochs: 30
+  patience: 5
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  per_source_batch_size: 8
+
+model:
+  num_classes: 7
+
+sam:
+  rho: 0.05

@@ -1,0 +1,9 @@
+defaults: base.yaml
+method: dann
+dann:
+  discriminator_hidden_dim: 256
+  dropout: 0.5
+  domain_loss_weight: 1.0
+  grl_schedule:
+    k: 10.0
+    max_alpha: 0.25

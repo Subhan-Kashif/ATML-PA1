@@ -1,0 +1,16 @@
+method: proser
+seed: 6304
+data_dir: /kaggle/working/data
+batch_size: 128
+epochs: 50
+lr: 0.0005
+momentum: 0.9
+weight_decay: 0.0005
+val_fraction: 0.1
+num_workers: 2
+num_dummy: 5
+beta: 1.0
+gamma: 0.1
+mixup_alpha: 2.0
+init_checkpoint: task4/cache/vanilla_best.pt
+checkpoint_path: task4/cache/proser_best.pt

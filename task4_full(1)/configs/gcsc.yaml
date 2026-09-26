@@ -1,0 +1,12 @@
+method: gcsc
+seed: 6304
+data_dir: /kaggle/working/data
+batch_size: 128
+epochs: 100
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+val_fraction: 0.1
+num_workers: 2
+use_randaugment: true
+checkpoint_path: task4/cache/gcsc_best.pt
